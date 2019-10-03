@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+// key value pairs -> set up state property
+// capture the values
+// if local data use that, else use initial data
+// update localStorage when needed
+// Don't forget to parse data from localStorage, and stringify new data getting stored
 
 export const useLocalStorage = (key, initialValue) => {
   if (typeof key !== 'string') {
