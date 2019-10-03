@@ -7,12 +7,15 @@ const Navbar = () => {
     e.preventDefault();
     setDarkMode(!darkMode);
   };
+
+  useDarkMode()
+
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
       <div className="dark-mode__toggle">
         <div
-          onClick={toggleMode}
+          onClick={darkMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
       </div>
